@@ -57,11 +57,11 @@ const FAQ = () => {
   // }, [])
 
   return (
-    <div className="flex items-center bg-[#FBF7F0] justify-center w-full md:min-h-[918px] max-sm:py-12 max-sm:px-">
+    <div className="flex items-center bg-[#FBF7F0] justify-center w-full md:min-h-[918px] max-sm:py-12">
       <div className=" text-oscuro pt-10 md:pt-24 md:px-16 text-black">
         <div>
-          <section className="text-gray-700">
-            <div className="px-5 py-16 lg:py-24 mx-auto">
+          <section className="text-[#4B5563]">
+            <div className="px-3 md:px-5 py-16 lg:py-24 mx-auto">
               <div className="text-center mb-20">
                 <h1 className="text-2xl md:text-[44px] text-[#4B5563] font-bold">
                   Frequently asked questions
@@ -75,7 +75,7 @@ const FAQ = () => {
                       key={item.id}
                       className={`${
                         show ? "bg-white" : "border"
-                      }  px-8 py-5 flex flex-col gap-2 items-center justify-center mb-4 cursor-pointer rounded-2xl`}
+                      }  px-2 py-3 md:px-8 md:py-5 flex flex-col gap-2 items-center justify-center mb-4 cursor-pointer rounded-2xl`}
                     >
                       <span
                         onClick={(e) => handleOpen(e, i, item)}
