@@ -12,34 +12,34 @@ const FAQ = () => {
   const data = [
     {
       id: 1,
-      title: "Is there a time limit for each session?",
-      desc: "No, you are free to complete the questions at your own speed, making the most of your critical thinking and problem-solving abilities.",
+      title: "How do i install the AC?",
+      desc: "Lorem ipsum dolor sit amet consectetur. Ultricies at eu tristique in quam vel ultricies. Volutpat vel odio iaculis viverra auctor semper. Velit tortor nisi porttitor at fermentum congue sapien augue id. A at at felis lacinia ac. Amet sed nunc sit volutpat cras felis. Dolor feugiat at.",
     },
     {
       id: 2,
-      title: "Are the 12 categories comprehensive enough?",
-      desc: "It has been thoroughly investigated and demonstrated that the 12 categories encompass the majority of issues that we may face in the real world.",
+      title: "How do i install the AC?",
+      desc: "Lorem ipsum dolor sit amet consectetur. Ultricies at eu tristique in quam vel ultricies. Volutpat vel odio iaculis viverra auctor semper. Velit tortor nisi porttitor at fermentum congue sapien augue id. A at at felis lacinia ac. Amet sed nunc sit volutpat cras felis. Dolor feugiat at.",
     },
     {
       id: 3,
       title:
-        "Is the critical thinking formula capable of solving real life problems",
-      desc: "Of course! The critical thinking formula has been meticulously crafted to guide you through each step of problem solving, brainstorming solutions, critical thinking, implementation, and evaluation. By following our guidance, you'll be able to approach any problem or difficulty from new perspectives.",
+        "How do i install the AC?",
+      desc: "Lorem ipsum dolor sit amet consectetur. Ultricies at eu tristique in quam vel ultricies. Volutpat vel odio iaculis viverra auctor semper. Velit tortor nisi porttitor at fermentum congue sapien augue id. A at at felis lacinia ac. Amet sed nunc sit volutpat cras felis. Dolor feugiat at.",
     },
     {
       id: 4,
-      title: "How do I view my session after it is completed?",
-      desc: "At the conclusion of each completed session, you will be able to download it, and you will also receive a PDF copy of the completed session. You can view all of the data in this way and become better informed.",
+      title: "How do i install the AC?",
+      desc: "Lorem ipsum dolor sit amet consectetur. Ultricies at eu tristique in quam vel ultricies. Volutpat vel odio iaculis viverra auctor semper. Velit tortor nisi porttitor at fermentum congue sapien augue id. A at at felis lacinia ac. Amet sed nunc sit volutpat cras felis. Dolor feugiat at.",
     },
     {
       id: 5,
-      title: "Do I need a high IQ to use the critical thinking  formula?",
-      desc: "The critical thinking  formula is meant to amplify your intelligence, so that you can figure out difficult situations on your own. It is not required of you to be highly intelligent or gifted to use it.",
+      title: "How do i install the AC?",
+      desc: "Lorem ipsum dolor sit amet consectetur. Ultricies at eu tristique in quam vel ultricies. Volutpat vel odio iaculis viverra auctor semper. Velit tortor nisi porttitor at fermentum congue sapien augue id. A at at felis lacinia ac. Amet sed nunc sit volutpat cras felis. Dolor feugiat at.",
     },
     {
       id: 6,
-      title: "Can I save my progress and come back to finish at a later time?",
-      desc: "Yes, Treep allows users to schedule rides in advance. Simply select the 'Schedule Ride' option in the app, choose your desired date and time, and confirm your booking.",
+      title: "How do i install the AC?",
+      desc: "Lorem ipsum dolor sit amet consectetur. Ultricies at eu tristique in quam vel ultricies. Volutpat vel odio iaculis viverra auctor semper. Velit tortor nisi porttitor at fermentum congue sapien augue id. A at at felis lacinia ac. Amet sed nunc sit volutpat cras felis. Dolor feugiat at.",
     },
   ];
 
