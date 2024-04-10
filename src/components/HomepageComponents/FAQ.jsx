@@ -57,7 +57,7 @@ const FAQ = () => {
   // }, [])
 
   return (
-    <div className="flex items-center bg-[#FBF7F0] justify-center w-full md:min-h-[918px] max-sm:py-12 max-sm:px-5">
+    <div className="flex items-center bg-[#FBF7F0] justify-center w-full md:min-h-[918px] max-sm:py-12 max-sm:px-">
       <div className=" text-oscuro pt-10 md:pt-24 md:px-16 text-black">
         <div>
           <section className="text-gray-700">
@@ -69,7 +69,7 @@ const FAQ = () => {
               </div>
 
               <div className="flex w-full sm:mx-auto sm:mb-2">
-                <div className="w-[760px] py-2 flex flex-col gap-3 justify-center">
+                <div className="w-full md:w-[760px] py-2 flex flex-col gap-3 justify-center">
                   {data?.map((item, i) => (
                     <div
                       key={item.id}
@@ -81,14 +81,17 @@ const FAQ = () => {
                         onClick={(e) => handleOpen(e, i, item)}
                         className={`${
                           show && "border-b "
-                        } text-xl text-[#4B5563] font-bold w-full rounded-md py-2 flex items-center justify-between`}
+                        } text-sm md:text-xl text-[#4B5563] font-bold w-full rounded-md py-2 flex items-center justify-between`}
                       >
+                        <span className=" max-sm:max-w-[80%]">
+
                         {item.title}
+                        </span>
 
                         {!show ? (
                           <svg
-                            width="40"
-                            height="40"
+                          className="w-[20px] md:w-[40px]"
+                       
                             viewBox="0 0 40 40"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
@@ -108,8 +111,7 @@ const FAQ = () => {
                           </svg>
                         ) : (
                           <svg
-                            width="40"
-                            height="40"
+                          className="w-[20px] md:w-[40px]"
                             viewBox="0 0 40 40"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +132,7 @@ const FAQ = () => {
                         )}
                       </span>
 
-                      <span className={`${!show ? "hidden" : "flex"}`}>
+                      <span className={`${!show ? "hidden" : "flex"} max-sm:text-sm`}>
                         {item.desc}
                       </span>
                     </div>
