@@ -66,22 +66,22 @@ const FAQ = () => {
                       key={item.id}
                       className={`${
                         selected === item.id ? "bg-white" : "border"
-                      }  px-2 py-3 md:px-8 md:py-5 flex flex-col gap-2 items-center justify-center mb-4 cursor-pointer rounded-2xl`}
+                      }  px-2 py-3 md:px-8 md:py-5 flex flex-col gap-2 items-center justify-center mb-4 rounded-2xl`}
                     >
                       <span
                        
                         className={`${
                           selected === item.id && "border-b "
-                        } text-sm md:text-xl text-[#4B5563] font-bold w-full rounded-md py-2 flex items-center justify-between`}
+                        } text-sm md:text-xl text-[#4B5563] font-bold w-full rounded-md py-2 flex items-center  justify-between`}
                       >
-                        <span  onClick={()=>setSelected(item.id)} className=" max-sm:max-w-[80%]">
+                        <span  onClick={()=>setSelected(item.id)} className=" max-sm:max-w-[80%] cursor-pointer">
 
                         {item.title}
                         </span>
 
                         {selected != item.id ? (
                           <svg
-                          className="w-[20px] md:w-[40px]"
+                          className="w-[20px] md:w-[40px] cursor-pointer"
                           onClick={()=>setSelected(item.id)}
                             viewBox="0 0 40 40"
                             fill="none"
@@ -103,7 +103,7 @@ const FAQ = () => {
                         ) : (
                           <svg
                           onClick={()=>setSelected("")}
-                          className="w-[20px] md:w-[40px] z-50"
+                          className="w-[20px] md:w-[40px] z-50 cursor-pointer"
                             viewBox="0 0 40 40"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
