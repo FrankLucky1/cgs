@@ -7,6 +7,8 @@ import { useDisclosure } from "@mantine/hooks";
 const FAQ = () => {
   // const [opened, { toggle }] = useDisclosure(false);
   const [toggle, setToggle] = useState(true);
+  
+  const [selected, setSelected] = useState(null)
   const [show, setShow] = useState(false);
 
   const data = [
@@ -43,18 +45,7 @@ const FAQ = () => {
     },
   ];
 
-  const handleOpen = (e, i, item) => {
-    console.log(e.target.value, item.id, i);
-    if (item.id === i+1) {
-      setShow((prev) => !prev);
-    }
-  };
 
-  // const {setPageTitle} = useContext(AppContext)
-
-  // useEffect(() => {
-  //  setPageTitle("FAQs")
-  // }, [])
 
   return (
     <div className="flex items-center bg-[#FBF7F0] justify-center w-full md:min-h-[918px] max-sm:py-12">
@@ -74,24 +65,24 @@ const FAQ = () => {
                     <div
                       key={item.id}
                       className={`${
-                        show ? "bg-white" : "border"
+                        selected === item.id ? "bg-white" : "border"
                       }  px-2 py-3 md:px-8 md:py-5 flex flex-col gap-2 items-center justify-center mb-4 cursor-pointer rounded-2xl`}
                     >
                       <span
-                        onClick={(e) => handleOpen(e, i, item)}
+                       
                         className={`${
-                          show && "border-b "
+                          selected === item.id && "border-b "
                         } text-sm md:text-xl text-[#4B5563] font-bold w-full rounded-md py-2 flex items-center justify-between`}
                       >
-                        <span className=" max-sm:max-w-[80%]">
+                        <span  onClick={()=>setSelected(item.id)} className=" max-sm:max-w-[80%]">
 
                         {item.title}
                         </span>
 
-                        {!show ? (
+                        {selected != item.id ? (
                           <svg
                           className="w-[20px] md:w-[40px]"
-                       
+                          onClick={()=>setSelected(item.id)}
                             viewBox="0 0 40 40"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +102,8 @@ const FAQ = () => {
                           </svg>
                         ) : (
                           <svg
-                          className="w-[20px] md:w-[40px]"
+                          onClick={()=>setSelected("")}
+                          className="w-[20px] md:w-[40px] z-50"
                             viewBox="0 0 40 40"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +124,7 @@ const FAQ = () => {
                         )}
                       </span>
 
-                      <span className={`${!show ? "hidden" : "flex"} max-sm:text-sm`}>
+                      <span className={`${selected != item.id ? "hidden" : "flex"} max-sm:text-sm`}>
                         {item.desc}
                       </span>
                     </div>
